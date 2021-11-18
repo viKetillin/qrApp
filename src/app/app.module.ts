@@ -15,7 +15,8 @@ import { QRScanner } from '@ionic-native/qr-scanner/ngx';
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    QRScanner],
+    QRScanner
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -10,6 +10,7 @@ import { AlertController } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage {
 
   scanner: any;
@@ -42,7 +43,6 @@ this.qrScanner.prepare()
        this.qrScanner.hide(); // hide camera preview
        this.scanner.unsubscribe(); // stop scanning
      });
-
    } else if (status.denied) {
      // camera permission was permanently denied
      // you must use QRScanner.openSettings() method to guide the user to the settings page
